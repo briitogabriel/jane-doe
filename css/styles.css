@@ -1,35 +1,223 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
-* {
-    box-sizing: border-box;
+body{
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font-size: 200%;
+}
+header{
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.29);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.29);
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.29);
+}
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav li{
+  display: inline-block;
+  padding: 1% 4%;
+}
+nav a{
+  text-decoration: none;
+  color: #555;
+}
+nav a:hover{
+  text-decoration: underline;
+}
+nav a.selected{
+  font-weight: bold;
+  color: rgb(228, 44, 44)
+}
+.banner img{
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+footer{
+  background: rgb(201, 201, 201);
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  margin: 0;
+}
+section.about{
+  margin-top: 30%;
+  text-align: center;
+}
+.about img{
+  margin-bottom: 4%;
+}
+.about h1{
+  font-size: 200%;
+}
+section.contact{
+  margin-top: 15%;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: left;
+}
+.contact article{
+  border-top: rgb(201, 201, 201) 2px solid;
+}
+.pr{
+  margin-bottom: 30px;
+}
+.contact{
+  overflow: hidden;
+}
+.music{
+  text-align: left;
+  margin-top: 15%;
+  margin-left: 10%;
+  margin-bottom: 30px;
+}
+.concept{
+  text-align: left;
+  margin-top: 6%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 30px;
+}
+.concept img{
+  float: left;
+}
+.musichome{
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+ol{
+  margin: 0;
+  padding: 0;
+  padding-top: 9%;
+  float: left;
+  padding-left: 3%;
+  width: 50%;
+  line-height: 200%;
+}
+ol a{
+  font-weight: bold;
+  color: orange;
+  text-decoration: none;
+}
+article{
+  clear: both;
+}
+.formulario{
+  width: 50%;
+  margin: 0 auto 6%;
+  float: left;
+  padding-right: 2%;
+}
+.inputs{
+  width: 100%;
+  max-width: 400px;
+  font-size: 90%;
+  display: block;
+  margin-bottom: 3%;
+}
+.mapa{
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  float: left;
+}
+button{
+  background-color: rgb(228, 44, 44);
+  color: white;
+  border: none;
+  height: 30px;
+  width: 70px;
+}
+.usuario{
+  vertical-align: middle;
+  display: flex;
+}
+label{
+  margin-bottom: 2%;
+}
+*{
+  box-sizing: border-box;
 }
 
-body {
-    font-family: 'Raleway', sans-serif;
-    padding: 0;
-    margin: 0;
+@media (orientation: landscape){
+  .about img{
+    width: 70vw;
+  }
+  iframe{
+    width: 80vw;
+  }
+  .music{
+    margin-top: 25%;
+  }
+  .music ul{
+    padding-inline-start: 6%;
+    width: 70vw;
+    margin: 2%;
+  }
 }
-
-header {
-    text-align: center;
+@media (max-width: 450px){
+  h1{
+    font-size: 150%;
+  }
+  h2{
+    font-size: 100%;
+    margin: 0 auto;
+    width: 90vw;
+  }
+  .about img{
+    width: 70vw;
+  }
+  .about h1{
+    font-size:120%;
+  }
+  iframe{
+    width: 80vw;
+    height: auto;
+  }
+  .music ul{
+    padding-inline-start: 6%;
+    width: 70vw;
+    margin: 2%;
+  }
+  p{
+    width: 80vw;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    padding-left: 3%;
+  }
+  .music, section.contact{
+    margin-top: 30%;
+  }
+  .formulario, .mapa{
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #FFF;
+  }
+  .mapa{
+    margin-top: 3%;
+    margin-bottom: 6%;
+  }
+  .usuario{
+    display: block;
+  }
+  .banner img{
+    margin-top: 25%;
+  }
+  .concept img{
+    width: 100%;
+  }
+  ol{
+    width: 100%;
+    padding-left: 6%;
+  }
 }
-
-nav ul {
-    list-style: none;
-    padding-left: 0px; 
-}
-
-nav ul li {
-    display: inline-block;
-    padding: 10px 20px;
-}
-nav ul li a {
-    text-decoration: none;
-    color: #555;
-}    
-
